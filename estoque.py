@@ -122,3 +122,16 @@ class Estoque:
 
         print("\nProduto mais caro:")
         print(caro)
+
+def cadastrar_produto(estoque):
+    try:
+        codigo = int(input("Código: "))
+        nome = input("Nome: ")
+        categoria = input("Categoria: ")
+        preco = float(input("Preço: "))
+        quantidade = int(input("Quantidade: "))
+
+        produto = Produto(codigo, nome, categoria, preco, quantidade)
+        estoque.cadastrar_produto(produto)
+    except ValueError as e:
+        print(f"Erro: {e}")
