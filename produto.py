@@ -29,3 +29,4 @@ def codigo_unico(codigo, produtos):
 
 def __repr__(self):
         return F"[{self.codigo}] {self.nome} - {self.categoria} - R${self.preco:.2f} - Quantidade: {self.quantidade}"
+
